@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day</title>
-    <style>
-        body {
-            background-color: pink;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            text-align: center;
-        }
-    </style>
-    <script>
-        function greet() {
-            alert('Happy Valentine\'s Day!');
-        }
-    </script>
+    <title>Valentine's Day Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body onload="greet()">
-    <h1>Happy Valentine's Day!</h1>
-    <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="white" stroke-width="4" fill="red" />
-    </svg>
+<body>
+    <header>
+        <h1>Happy Valentine's Day</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Valentine's Day</h2>
+            <p>Valentine's Day is a day to celebrate love. It is observed on February 14th each year.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <img src="image1.jpg" alt="Valentine's Day Image 1">
+            <img src="image2.jpg" alt="Valentine's Day Image 2">
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Valentine's Day Celebration</p>
+    </footer>
 </body>
 </html>
